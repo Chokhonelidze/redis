@@ -1,16 +1,16 @@
 version: '3.8'
 
 services:
-  server: 
-    build: "redis"
-    ports:
-      - "3000:3000"
-    depends_on:
-    - DB
-    links:
-      - DB
-    image:
-      chokhonelidze/redisserver:latest
+  #server: 
+    #build: "redis"
+    #ports:
+     # - "3000:3000"
+    #depends_on:
+    #- DB
+    #links:
+     # - DB
+    #image:
+     # chokhonelidze/redisserver:latest
     
   DB:
     image: redis
